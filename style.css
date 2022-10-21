@@ -1,6 +1,23 @@
-body
-{
- background-color: aquamarine;
- color: black;
- 
-};
+body{
+ background-color: grey; 
+}
+::placeholder{
+    color: rgb(128, 141, 199);
+}
+#s{
+    background-color: rgb(29, 161, 57);
+}
+#r{
+    background-color: rgb(199, 57, 57);
+}
+legend{
+color:rgb(23, 56, 87);
+}
+h1,h2{
+    text-align: center;
+    text-shadow: 10px 10px 5px rgb(57, 65, 99);
+    letter-spacing: 2px;
+    line-height: 20px;
+    
+   
+}

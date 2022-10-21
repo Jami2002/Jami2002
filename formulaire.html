@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -9,65 +8,67 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body><h1>Formlaire</h1>
-    <form action="form.html">
-        <fieldset>
-            <legend>Formulaire</legend>
+  <form action="form.html">
+   <fieldset>
+            <legend>Obligatoire</legend>
         <div>
             <label for="nom">nom</label>
            <input type="text" id="nom" minlength="5" placeholder="nom">
 
-      </div>
+       </div>
 
         <div>
            <label for="prenom">prenom</label> )
            <input type="text" id="prenom" placeholder="prenom">
-       </div>
+        </div>
 
-      <div>
+       <div>
         <label for="mail">Email</label>
         <input type="email" id="mail" placeholder="xyz@example.com">
-      </div>
+       </div>
 
-      <div>
+       <div>
         <label for="h">homme</label>
         <input type="radio" name="radio1" id="h"> 
         <label for="f">femme</label>
         <input type="radio" name="radio1" id="f"> 
-    </div>
+       </div>
     
        <div>
-        <label for="fichier">envoyer un fichier</label>
-        <input type="file" name="fichier envoyer" id="ficher">
+        <label for="fich">envoyer un fichier</label>
+        <input type="file" name="fichier envoyer" id="fich">
        </div>
- <div> 
-    <H1> choisir une langue</H1>
-    <label for="langue">francais</label>
-    <input type="checkbox" name="choisir langue" id="langue">
-    <label for="langue">anglais</label>
-    <input type="checkbox" name="choisir langue" id="langue">
- </div>
- <div>
-    <h3>formations</h3>
-    <select>
-    <option value="a">design</option>
-    <option value="b">hotellerie</option>
-    <option value="c">patisserie</option>
-   </select>
- </div>
+    <div> 
+     <H1> choisir une langue</H1>
+     <label for="fr">francais</label>
+     <input type="checkbox" name="choisir langue" id="fr">
+     <label for="en">anglais</label>
+     <input type="checkbox" name="choisir langue" id="en">
+    </div>
+   <div>
+      <h2>formations</h2>
+      <select>
+       <option value="a">Design</option>
+       <option value="b">Hotellerie</option>
+       <option value="c">Patisserie</option>
+      </select>
+    </div>
 
-  <div>
+    <div>
     <textarea name="message" id="msg" cols="30" rows="10" placeholder="rediger une lettre de motivation"></textarea>
-  </div>
- <div>
-    <input type="password">
- </div>
+    </div>
+    <div> 
+        <label for="pass">Mot de passe</label>
+      <input type="password" id="pass">
+    </div>
 
 
-      <div>
-        <input type="submit" value="Envoyer">
-        <input type="reset" name="res" id="r" value="supprimer">
-      </div>
-    </fieldset>
+    <div>
+        <input type="submit" id="s" value="Envoyer" >
+        <input type="reset" id="r" value="annuler" >
+    </div>
+</fieldset>
     </form>
+   
 </body>
 </html>
