@@ -12,18 +12,47 @@ body{
 }
 legend{
     text-align: center;
-color:rgb(23, 56, 87);
+ color: red;
+ padding-top: 2px;
 }
 h1,h2{
     text-align: center;
-    text-shadow: 10px 10px 5px rgb(57, 65, 99);
+    text-shadow: 10px 10px 8px rgb(57, 65, 99);
     letter-spacing: 2px;
     line-height: 20px;
 }
 form{
+min-width: 100%;
+   font-size:  1rem;
+}
+fieldset{
+    background-color:white;
+    width: 400px;
+    height: 700px;
+    margin: 0 auto;
+    border: 3px solid;
     
-    margin: auto;
-    width: 500px;
-    height: 400px;
+    
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 10px 10px 3px rgb(31, 31, 146);
+    
+
 }
 
+input{
+ margin-bottom: 20px;
+}
+@media screen and (max-width:400px) {
+    fieldset{
+        width:auto;
+        margin:0 5px;
+    }
+    
+}
+div{
+    margin-left: 40px;
+   
+    
+}
