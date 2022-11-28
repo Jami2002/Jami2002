@@ -2,7 +2,7 @@
     color: rgb(128, 141, 199);
 }
 body{
-    background-color: grey;
+    background-color: rgb(224, 218, 218);
 }
 #s{
     background-color: rgb(29, 161, 57);
@@ -24,6 +24,8 @@ h1,h2{
 form{
 min-width: 100%;
    font-size:  1rem;
+   display:inline-block;
+   
 }
 fieldset{
     background-color:white;
@@ -31,6 +33,8 @@ fieldset{
     height: 700px;
     margin: 0 auto;
     border: 3px solid;
+    margin-bottom: 100px;
+    
     
     
 }
@@ -52,7 +56,38 @@ input{
     
 }
 div{
-    margin-left: 40px;
-   
-    
+    margin-left: 40px;  
+}
+header,footer{
+background-color: rgb(28, 155, 190);
+height: 300px;
+padding-top: 30px;
+
+
+}
+#a,#b{
+
+    margin-left:20px ;
+}
+img,source{
+    width: 200px;
+    padding-top: 20px;
+
+}
+.m{
+padding-left: 100px;
+padding-bottom: 10px;
+padding-top: 20px;
+}
+header{
+height: 30px;
+}
+audio,video,img{
+    margin-bottom: 100px;
+    margin-top: 50px;
+    display: inline-block;
+}
+a{
+    display: inline;
+    margin-right: 5px;
 }
