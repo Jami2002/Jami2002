@@ -20,6 +20,7 @@ h1,h2{
     text-shadow: 10px 10px 8px rgb(57, 65, 99);
     letter-spacing: 2px;
     line-height: 20px;
+    margin-top: 20px;
 }
 form{
 min-width: 100%;
