@@ -7,8 +7,14 @@ body{
 #s{
     background-color: rgb(29, 161, 57);
 }
+#s:hover{
+    background-color: green;
+}
 #r{
     background-color: rgb(199, 57, 57);
+}
+#r:hover{
+    background-color:red;
 }
 legend{
     text-align: center;
@@ -18,7 +24,7 @@ legend{
 h1,h2{
     text-align: center;
     text-shadow: 10px 10px 8px rgb(57, 65, 99);
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 20px;
     margin-top: 20px;
 }
@@ -27,11 +33,12 @@ min-width: 100%;
    font-size:  1rem;
    display:inline-block;
    
+   
 }
 fieldset{
     background-color:white;
     width: 400px;
-    height: 700px;
+    height: 800px;
     margin: 0 auto;
     border: 3px solid;
     margin-bottom: 100px;
@@ -43,6 +50,7 @@ fieldset{
 
 input{
  margin-bottom: 20px;
+ margin-top: 20px;
 }
 @media screen and (max-width:400px) {
     fieldset{
@@ -53,7 +61,6 @@ input{
 }
 div{
     margin-left: 40px;  
-    margin-top: 10px;
 }
 header{
     background-color: rgb(28, 155, 190);
