@@ -38,12 +38,7 @@ fieldset{
     
     
 }
-p{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-shadow: 10px 10px 3px rgb(31, 31, 146);
-    
 
-}
 
 input{
  margin-bottom: 20px;
@@ -57,37 +52,72 @@ input{
 }
 div{
     margin-left: 40px;  
+    margin-top: 10px;
 }
-header,footer{
+header{
+    background-color: rgb(28, 155, 190);
+    height: 40px;
+    position: sticky;
+    top:0;
+}
+footer{
 background-color: rgb(28, 155, 190);
 height: 300px;
 padding-top: 30px;
 
 
-}
-#a,#b{
+    }
 
-    margin-left:20px ;
+
+#ac{
+    background-color: rgb(28, 155, 190);
+    border: 0;
+    color :black;
+    margin-left :50px; ;
+    margin-right: 50px;      
+
 }
-img,source{
+#ac:hover{
+    background-color:white;
+
+    
+}
+#sous{
+    background-color: rgb(28, 155, 190);
+    border: 0;
+    color :black;
+    margin-left: 0px;
+    margin-right: 50px;
+
+}
+
+    #sous:hover{
+        background-color:white;
+        
+    }
+
+
+*{
+    
+    margin: 0;
+}
+source{
     width: 200px;
     padding-top: 20px;
 
 }
+
+
 .m{
 padding-left: 100px;
 padding-bottom: 10px;
-padding-top: 20px;
+padding-top: 40px;
 }
-header{
-height: 30px;
-}
+
 audio,video,img{
     margin-bottom: 100px;
     margin-top: 50px;
     display: inline-block;
+    
 }
-a{
-    display: inline;
-    margin-right: 5px;
-}
+
