@@ -4,7 +4,10 @@
 body{
     background-color: rgb(224, 218, 218);
 }
-
+h1::selection{
+    background-color: rgb(42, 151, 165);
+    color:black;
+}
 #s{
     background-color: rgb(29, 161, 57);
 }
@@ -60,6 +63,12 @@ header{
     height: 40px;
     position: sticky;
     top:0;
+    transition: height 2s linear ,border 6s ease;
+}
+header:hover{
+    background-color: rgb(85, 156, 156);
+    border-radius: 5px;
+    height:60px;
 }
 
 footer{
@@ -74,6 +83,7 @@ a[href]{
     border: 0;
     color: black;
     margin-left:30px;
+    transition: height 2s linear ,border 6s ease;
 }
 
 a:hover{
@@ -99,14 +109,21 @@ padding-top: 40px;
 header{
 height: 30px;
 }
-audio,video,img{
+audio,video{
     margin-bottom: 100px;
     margin-top: 50px;
-    display: inline-block;
+    margin-left:50px;
 }
 select{
     margin-bottom: 30px;
 }
-
-
+video{
+    width:150px;
+    border-radius: 60px;
+    transition: width 2s 1s linear, border 3s 1s ease;
+}
+video:hover{
+ width:400px;
+ border-radius: 20px;
+}
 
