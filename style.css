@@ -17,7 +17,7 @@ body{
     background-color:red;
 }
 legend{
-    text-align: center;
+text-align: center;
  color: red;
  padding-top: 2px;
 }
@@ -26,14 +26,7 @@ h1,h2{
     text-shadow: 10px 10px 8px rgb(57, 65, 99);
     letter-spacing: 1px;
     line-height: 20px;
-    margin-top: 20px;
 }
-form{
-min-width: 100%;
-   font-size:  1rem;
-   display:inline-block;   
-}
-
 fieldset{
     background-color:white;
     width: 400px;
@@ -44,9 +37,9 @@ fieldset{
 }
 
 
-input{
+input,h1,h2{
  margin-bottom: 20px;
- margin-top: 20px;
+ margin-top: 10px;
 }
 
 @media screen and (max-width:400px) {
@@ -110,9 +103,9 @@ audio,video,img{
     margin-top: 50px;
     display: inline-block;
 }
-    
-
-#top{
-    margin-top: 50px;
+select{
+    margin-bottom: 30px;
 }
+
+
 
