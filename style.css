@@ -120,10 +120,12 @@ select{
 video{
     width:150px;
     border-radius: 60px;
-    transition: width 2s 1s linear, border 3s 1s ease;
+    border:5px solid;
+    transition: width 2s linear, border 6s ease;
 }
 video:hover{
  width:400px;
  border-radius: 20px;
+ border:10px solid rgb(34, 42, 82)
 }
 
