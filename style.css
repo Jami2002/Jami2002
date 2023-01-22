@@ -122,10 +122,22 @@ video{
     border-radius: 60px;
     border:5px solid;
     transition: width 2s linear, border 6s ease;
+   
 }
 video:hover{
  width:400px;
  border-radius: 20px;
- border:10px solid rgb(34, 42, 82)
+ border:10px solid  rgb(34, 42, 82)
 }
-
+audio{
+    background-color: rgb(64, 128, 128);
+    animation-name: anim1;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim1 {
+    from{background-color: rgb(75, 58, 116);}
+    to{background-color: brown;}
+    
+}
