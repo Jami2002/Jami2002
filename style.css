@@ -84,6 +84,7 @@ a[href]{
     color: black;
     margin-left:30px;
     transition: height 2s linear ,border 6s ease;
+
 }
 
 a:hover{
@@ -109,10 +110,12 @@ padding-top: 40px;
 header{
 height: 30px;
 }
+
+
 audio,video{
     margin-bottom: 100px;
     margin-top: 50px;
-    margin-left:50px;
+    margin-left:100px;
 }
 select{
     margin-bottom: 30px;
@@ -139,5 +142,11 @@ audio{
 @keyframes anim1 {
     from{background-color: rgb(75, 58, 116);}
     to{background-color: brown;}
+}
+ 
+body{
+    background-image: url("image/Capture\ d’écran\ \(10\).png");
+    background-repeat:round;
+    background-position: center;
     
 }
