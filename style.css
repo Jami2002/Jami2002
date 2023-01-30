@@ -38,6 +38,10 @@ fieldset{
     margin: 0 auto;
     border: 3px solid;
     margin-bottom: 100px;
+    background-image: url("image/Capture\ d’écran\ \(38\).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -145,7 +149,7 @@ body{
     background-image: url("image/Capture\ d’écran\ \(24\).png");
     background-repeat:no-repeat;
     background-position: center;
-    background-size: 97%;
+    background-size:cover;
 
     
 }
