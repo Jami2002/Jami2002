@@ -24,6 +24,7 @@ legend{
 text-align: center;
  color: red;
  padding-top: 2px;
+ font-size: 30px;
 }
 h1,h2{
     text-align: center;
@@ -77,6 +78,13 @@ header:hover{
     height:60px;
 }
 
+@media screen and (max-width:135px) {
+    header{
+        width:auto;
+        
+    }
+    
+}
 footer{
 background-color: rgb(28, 155, 190);
 height: 300px;
@@ -86,11 +94,13 @@ padding-top: 30px;
 
 
 a[href]{
-    border: 0;
     color: black;
     margin-left:30px;
     transition: height 2s linear ,border 6s ease;
-
+    position: relative;
+    top:10px;
+    
+    background-color: rgb(93, 138, 93);
 }
 
 a:hover{
