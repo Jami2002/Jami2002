@@ -1,0 +1,37 @@
+img{
+    width: 100px;
+    height: 120px;
+    margin-top:5px;
+   
+    float: left;
+    position: relative;
+    left: 10px;
+}
+
+.div1{
+ background-color: rgba(218, 217, 223, 0.397);
+  height: 100px;
+  text-align: right;
+  padding: 20px 20px;
+   
+}
+
+
+h2{
+    text-align: center;
+    color: rgb(172, 17, 17);
+    background-color: burlywood;
+    border-radius: 10px;
+    
+}
+body{
+    padding: 90px;
+}
+#contact{
+    font-size:smaller
+}
+#name{
+  color: rgb(58, 17, 172);
+  
+}    
+

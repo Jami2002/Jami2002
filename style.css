@@ -68,7 +68,9 @@ header{
     background-color: rgb(28, 155, 190);
     height: 40px;
     position: sticky;
-   
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     top:0;
     transition: height 2s linear ,border 6s ease;
 }
@@ -78,13 +80,7 @@ header:hover{
     height:60px;
 }
 
-@media screen and (max-width:135px) {
-    header{
-        width:auto;
-        
-    }
-    
-}
+
 footer{
 background-color: rgb(28, 155, 190);
 height: 300px;
@@ -97,10 +93,8 @@ a[href]{
     color: black;
     margin-left:30px;
     transition: height 2s linear ,border 6s ease;
-    position: relative;
-    top:10px;
-    
     background-color: rgb(93, 138, 93);
+
 }
 
 a:hover{
