@@ -32,18 +32,16 @@
  */
 
  .con{
-  width: 400px;
+  width: 300px;
   height: 200px;
   display: flex;
-  justify-content: space-evenly;
  }
   .conteneur{
     border: 10px solid;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     /*flex-direction: row;
     justify-content:center;
     align-items: flex-start;
