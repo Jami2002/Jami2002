@@ -1,0 +1,97 @@
+button{
+    background-color: aquamarine;
+    font-size: 25px;
+    height: 40px;
+    flex-basis:40px;
+    margin: 5px;
+    text-align: center;
+}
+
+.content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(248, 238, 215);
+    width:250px;
+    height: 300px;
+    margin: auto;
+    background-image: url(image/Capture\ d’écran\ \(19\).png);
+    background-position: center;
+    
+}
+
+#test{
+    height: 40px;
+    flex-basis: 200px;
+
+    
+
+}
+.text{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+.chiffre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+.clas1{
+    order:13;
+}
+.clas2{
+    order: 12;
+}
+.clas3{
+    order: 11;
+}
+.clas4{
+    order: 8;
+}
+.clas5{
+    order: 7;
+}
+.clas6{
+    order:6;
+}
+.clas7{
+    order: 1;
+}
+
+.clas8{
+    order: 2;
+}
+.clas9{
+    order: 3;
+}
+.clas0{
+    order: 14;
+}
+.moins{
+order: 5;
+background-color: green;
+}
+.plus{
+    order:4 ;
+    background-color: green;
+}
+.mult{
+    order:9 ;
+    background-color: green;
+}
+.divi{
+    order:10 ;
+    background-color: green;
+}
+.egal{
+    order:15 ;
+    background-color: green;
+}
+.supp{
+    order:16 ;
+    background-color:red;
+}
