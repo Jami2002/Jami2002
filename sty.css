@@ -2,10 +2,8 @@ img{
     width: 100px;
     height: 120px;
     margin-top:5px;
-   
     float: left;
-    position: relative;
-    left: 10px;
+   
 }
 
 .div1{
@@ -35,3 +33,6 @@ body{
   
 }    
 
+@media  screen and (max-width=150px) {
+    
+}
