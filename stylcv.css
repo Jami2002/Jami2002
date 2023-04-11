@@ -2,7 +2,7 @@
 
 .header{
 background-color:brown;
-width: 100%;
+width: 700px;
 text-align: right;
 height: 70px;
 margin: auto;
@@ -11,7 +11,10 @@ margin: auto;
 
 
 
-
+.niveau{
+    
+    flex-basis: 90%;
+}
 
 
 .contact{
@@ -46,12 +49,20 @@ img{
    color: rgb(15, 15, 15);
    
 }
+.edu{
+    display: flex;
+    
+}
+
 .conteneur{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-   
+    width: 700px;
+  margin: auto;
+  
 }
+
 h2{
     
     font-size: 17px;
@@ -66,4 +77,33 @@ p{
     border-radius: 10px;
     color:white;
     text-align: right;
+   }
+   .footer{
+    flex-basis: 100%;
+   }
+   p[class="foot"]{
+    float:right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+
+   }
+  
+   @media screen and (max-width:700px) {
+     .header{
+      width:100% ;
+     }
+     .contact{
+        flex-basis: 20%;
+     }
+     .info{
+        flex-basis: 78%;
+        
+     }
+     .annee{
+        flex-basis:40% ;
+     }
+     .niveau{
+        flex-basis: 40%;
+     }
+      
    }
