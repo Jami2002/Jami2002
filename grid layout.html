@@ -18,26 +18,44 @@
 
         .grid-contenair{
             display: grid;
-            grid-template-columns: repeat(3,100px);
+            grid-template-columns: repeat(3,200px);
             gap: 10px 10px;
+            background-image: url(image/IMG_44.JPG);
+            background-size:cover;
+            width: 700px;
+            background-attachment:fixed;
+            background-origin:padding-box;
+           border: 2px ;
+           
+           margin: auto;
         }
         img{
             width: 200px;
             height: 200px;
         }
+        legend{
+            text-align: center;
+            color: rgba(247, 7, 7, 0.5);
+        }
+        
+        
     </style>
 </head>
 <body>
-    <div class="grid-contenair">
-        <div class="item-grid"><img src="image/Capture d’écran (24).png"></div>
-        <div class="item-grid"><img src="image/Capture d’écran (19).png"> </div>
-        <div class="item-grid"><img src="image/Capture d’écran (18).png"></div>
-        <div class="item-grid"><img src="image/Capture d’écran (22).png"></div>
-        <div class="item-grid"><img src="image/status_me_status_IMG-20220128-WA0039.jpg"></div>
-        <div class="item-grid"><img src="image/Capture d’écran (32).png"></div>
-        <div class="item-grid"><img src="image/Capture d’écran (38).png"></div>
-        <div class="item-grid"><img src="image/Capture d’écran .png"></div>
-        <div class="item-grid"><img src="image/Capture d’écran (10).png"></div>
-    </div>
+    <fieldset>
+        <legend>MES OEUVRES</legend>
+        <div class="grid-contenair">
+            <div class="item-grid"><img src="image/Capture d’écran (24).png"></div>
+            <div class="item-grid"><img src="image/Capture d’écran (19).png"> </div>
+            <div class="item-grid"><img src="image/Capture d’écran (18).png"></div>
+            <div class="item-grid"><img src="image/Capture d’écran (22).png"></div>
+            <div class="item-grid"><img src="image/imb.jpg"></div>
+            <div class="item-grid"><img src="image/Capture d’écran (32).png"></div>
+            <div class="item-grid"><img src="image/Capture d’écran (38).png"></div>
+            <div class="item-grid"><img src="image/Capture d’écran .png"></div>
+            <div class="item-grid"><img src="image/Capture d’écran (10).png"></div>
+        </div>
+    </fieldset>
+   
 </body>
 </html>
