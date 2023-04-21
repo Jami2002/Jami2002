@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridarea</title>
+    <style>
+.gridcontenair{
+    display: grid;
+    grid-template-areas: "head head head"
+    "slid cont cont" "foot foot foot";
+    
+}
+     .gridheader{
+        grid-area: head;
+        background-color:peru;
+        height: 50px;
+     }
+     .gridslide{
+        grid-area: slid;
+        background-color: blue;
+        height: 400px;
+     }
+     .content{
+        grid-area: cont;
+        background-color:lime;
+        
+     }
+     .footer{
+        grid-area: foot;
+        background-color: plum;
+        height: 50px;
+     }
+    </style>
+</head>
+<body>
+    <div class="gridcontenair">
+        <div class="gridheader">header</div>
+        <div class="gridslide">slide</div>
+        <div class="content">cont</div>
+        <div class="footer">foot</div> 
+    </div>
+  
+</body>
+</html>
