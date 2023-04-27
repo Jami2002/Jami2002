@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 11.5px;
+}
+
+header{
+    background-color: grey;
+    color: white;
+    text-align: center;
+    font-family: 'caveat',cursive;
+    height: 100px;
+    position: sticky;
+    top: 0;
+}
+header h1{
+    letter-spacing: 4px;
+    padding-top: 10px;
+    text-shadow: 2px 2px 5px black;
+}
+header h2{
+    letter-spacing: 3px;
+    padding-top: 12px;
+    font-size: 18px;
+} 
+
+
+nav{
+    
+    background-color: lightgrey;
+   height: 40px;
+   text-align: center;
+}
+nav li{
+    display: inline-block;  
+    padding: 10px 30px 0 0;
+}
+nav a{
+    text-decoration: none;
+    background-color: grey;
+    padding: 5px;
+    color: lightgrey;
+    border-radius: 7px ;
+}
+nav a:hover{
+    color: black;
+    border: 1px solid;
+}
+
+
+
+.wrapper{
+    display: grid;
+   
+    height: 400px;
+    grid-template-areas:  "aside section section section section section section";
+    padding: 10px 100px;
+   
+}
+
+
+.wrapper aside{
+ grid-area: aside;
+ padding: 10px 0px 0px 30px;
+ border: 2px dotted lightgrey;
+ 
+}
+.wrapper aside img{
+height: 200px;
+width: 163px;
+border-radius: 10px;
+}
+.title{
+    text-transform: uppercase;
+    background-color: rgb(240, 232, 232);
+    width: 150px;
+   margin: 10px 0px;
+   box-shadow: 1px 1px 5px peru;
+   text-align: center;
+   padding: 5px;
+}
+.wrapper aside li{
+    text-align: left;
+    line-height: 18px;
+    width: 163px;
+    list-style-type: none;
+}
+
+
+.wrapper section{
+    grid-area: section;
+   
+    border: 2px dotted lightgrey;
+}
+
+footer{
+    text-transform: uppercase;
+    background-color: grey;
+    text-align: center;
+    font-size: smaller;
+    height: 20px;
+}
