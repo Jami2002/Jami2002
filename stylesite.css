@@ -53,52 +53,116 @@ nav a:hover{
 
 .wrapper{
     display: grid;
-   
-    height: 400px;
-    grid-template-areas:  "aside section section section section section section";
-    padding: 10px 100px;
+    grid-template-areas:  "aside  section section"; 
+    width: 80%;
+    margin: auto;
+    max-width: 700px;
+    gap:30px
    
 }
 
 
 .wrapper aside{
+    
  grid-area: aside;
- padding: 10px 0px 0px 30px;
- border: 2px dotted lightgrey;
- 
+ width: 150px;
+ padding:20px;
 }
 .wrapper aside img{
 height: 200px;
-width: 163px;
+width: 150px;
 border-radius: 10px;
+
 }
 .title{
     text-transform: uppercase;
     background-color: rgb(240, 232, 232);
-    width: 150px;
-   margin: 10px 0px;
+   margin: 20px 0px;
    box-shadow: 1px 1px 5px peru;
    text-align: center;
-   padding: 5px;
+   padding: 3px;
 }
 .wrapper aside li{
     text-align: left;
     line-height: 18px;
-    width: 163px;
+    width: 80%;
     list-style-type: none;
 }
+.atout p{
+    padding-top:5px ;
+}
+.atout span{
+    font-weight: bold;
+}
 
+.atout progress{
+    height: 25px;
+    width: 95%;
+    border-radius: 5px;
+   
+    
+}
+div progress::-webkit-progress-bar{
+    background-color: lightgrey;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+    border: 1px solid peru;
+}
+div progress::-webkit-progress-value{
+    background-color: rgb(219, 102, 56);
+    border-radius: 5px;
+}
 
 .wrapper section{
     grid-area: section;
    
-    border: 2px dotted lightgrey;
+}
+.wrapper section  p{
+    text-align: justify;
+    padding-bottom: 10px;
+}
+.wrapper section b{
+    text-transform: capitalize;
+    background-color: rgb(219, 102, 56);
+    
+}
+#flex-container p{
+    font-size: 12px;
+    padding: 10px;
+    color: grey;
+    text-align: center;
+}
+#flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+     text-align: center;
+   
+}
+#flex-container img{
+ 
+ height: 50px;
+ margin: auto;
+
 }
 
+.html{
+    flex-basis: 30%;
+   
+}
+.css{
+    flex-basis: 30%;
+}
+.git{
+    flex-basis: 30%;
+}
 footer{
     text-transform: uppercase;
     background-color: grey;
     text-align: center;
     font-size: smaller;
     height: 20px;
+}
+footer p{
+    padding-top: 5px;
 }
