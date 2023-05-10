@@ -28,9 +28,10 @@ header h2{
 
 
 nav{
-    
+    position: sticky;
+    top: 100px;
     background-color: lightgrey;
-   height: 40px;
+   height: 35px;
    text-align: center;
 }
 nav li{
@@ -43,6 +44,7 @@ nav a{
     padding: 5px;
     color: lightgrey;
     border-radius: 7px ;
+    
 }
 nav a:hover{
     color: black;
@@ -63,7 +65,7 @@ nav a:hover{
 
 
 .wrapper aside{
-    
+   
  grid-area: aside;
  width: 150px;
  padding:20px;
@@ -140,7 +142,7 @@ div progress::-webkit-progress-value{
    
 }
 #flex-container img{
- 
+ width: 100px;
  height: 50px;
  margin: auto;
 
@@ -165,4 +167,28 @@ footer{
 }
 footer p{
     padding-top: 5px;
+}
+/*portfolio*/
+
+.flex-contenair-portfolio {
+ display: flex;
+ flex-wrap:wrap;
+ text-align: center;
+ justify-content: space-between;
+}
+.flex-contenair-portfolio .item_site{
+    flex-basis: 50%;
+   
+}
+.item_site p{
+ width: 90%;
+ padding-left:10px ;
+}
+.item_site img{
+    width: 90%;
+    height: 200px;
+    box-shadow: 1px 1px 5px black;
+}
+.item_site img:hover{
+    box-shadow: 1px 1px 10px black;
 }
