@@ -1,0 +1,15 @@
+#sec{
+    background-position: center;
+     width: 500px;
+     height: 200px;
+     background-image: url(image/Capture\ d’écran\ \(18\).png);
+     text-align: center;
+     padding-top:120px;
+     background-repeat: no-repeat;
+     margin: auto;
+     font-size: 70px;
+     border-radius: 10px;
+  }
+  h1{
+    text-align: center
+  }

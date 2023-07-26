@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>faire une horloge</title>
+      <link rel="stylesheet" href="stylehorloge.css">
+    </head>
+    <body>
+        <h1>NOTRE HORLOGE</h1>
+        <p id="sec"></p>
+      
+        <script type="text/javascript">
+        
+         var dat=new Date();
+     
+         h=dat.getHours();
+          
+         m=dat.getMinutes();
+          
+         s=dat.getSeconds();
+        
+         
+         function timer(){ 
+            s++;
+
+            document.getElementById("sec").innerHTML=h+":"+m+":"+s;
+            if(s>=60){
+               s=0;
+               m=m+1;
+            }
+            if(m>=60){
+               m=0
+               h=h+1;
+            }
+            if(h>=23){
+               h=0;
+               m=0;
+               s=0;
+            }
+           
+         }
+          setInterval ("timer()",1000)
+
+
+         
+        </script>
+    </body>
+
+</html>
