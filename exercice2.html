@@ -13,19 +13,36 @@
       
         <script type="text/javascript">
         
-         var dat=new Date();
-     
-         h=dat.getHours();
           
-         m=dat.getMinutes();
+          var dat=new Date();
           
-         s=dat.getSeconds();
+           var h=dat.getHours();
+           var m=dat.getMinutes();
+           var s=dat.getSeconds();
         
          
          function timer(){ 
-            s++;
 
+            s++;
             document.getElementById("sec").innerHTML=h+":"+m+":"+s;
+            if(s<10){
+               var sec="0"+s;
+               document.getElementById("sec").innerHTML=h+":"+m+":"+sec.toString();
+               
+            }
+            if(m<10){
+               var min="0"+m;
+            document.getElementById("sec").innerHTML=h+":"+min.toString()+":"+s;
+            
+            }
+            if(h<10){
+               var hr="0"+h;
+               document.getElementById("sec").innerHTML=hr.toString()+":"+m+":"+s;
+               
+            }
+           
+            
+          
             if(s>=60){
                s=0;
                m=m+1;
