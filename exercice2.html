@@ -1,68 +1,37 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>faire une horloge</title>
-      <link rel="stylesheet" href="stylehorloge.css">
-    </head>
-    <body>
-        <h1>NOTRE HORLOGE</h1>
-        <p id="sec"></p>
-      
-        <script type="text/javascript">
-        
-          
-          var dat=new Date();
-          
-           var h=dat.getHours();
-           var m=dat.getMinutes();
-           var s=dat.getSeconds();
-        
-         
-         function timer(){ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylehorloge.css">
+</head>
+<body>
+    <p id="time"></p>
+    <script type="text/javascript">
+        function checkTime(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
 
-            s++;
-            document.getElementById("sec").innerHTML=h+":"+m+":"+s;
-            if(s<10){
-               var sec="0"+s;
-               document.getElementById("sec").innerHTML=h+":"+m+":"+sec.toString();
-               
-            }
-            if(m<10){
-               var min="0"+m;
-            document.getElementById("sec").innerHTML=h+":"+min.toString()+":"+s;
-            
-            }
-            if(h<10){
-               var hr="0"+h;
-               document.getElementById("sec").innerHTML=hr.toString()+":"+m+":"+s;
-               
-            }
-           
-            
-          
-            if(s>=60){
-               s=0;
-               m=m+1;
-            }
-            if(m>=60){
-               m=0
-               h=h+1;
-            }
-            if(h>=23){
-               h=0;
-               m=0;
-               s=0;
-            }
-           
-         }
-          setInterval ("timer()",1000)
+function Timer() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  //ajouter le zero devant chaque nombres<10
+  h = checkTime(h);
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+ t = setTimeout(function() {
+    Timer()
+  });
+}
+Timer();
 
-
-         
-        </script>
-    </body>
-
+    </script>
+</body>
 </html>
