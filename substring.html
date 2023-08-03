@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>longestsubtring</title>
+    <script type="text/javascript">
+        
+     var lengthOfLongestSubstring = function(s) {
+             console.log("myString: "+s);
+         var t="";
+         for(var i=0;i<s.length;i++){
+            // si la chaine vide
+            if  (t.length==0){
+              console.log(t+=s.charAt(i));
+            }
+            else {
+                // verifie si la souschaine (de la chaine s) ou la voyelle entrée nest pas deja dans la chaine t
+               if(t.indexOf(s.charAt(i))==-1) {
+                 console.log(t+=s.charAt(i));
+               }
+            }
+          }
+         
+         return t.length;
+        };
+    var myString="aetyyijhhfrdde";
+    console.log(lengthOfLongestSubstring (myString));
+    
+    
+    
+       </script> 
+</head>
+<body>
+  
+   <h1>bonjour</h1>
+</body>
+</html>

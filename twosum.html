@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var twoSum = function(nums, target) {
+    for(var i=0;i<nums.length;i++){
+        for(var j=1;j<nums.length;j++){
+            if(i==j){
+                j++
+            }
+            let s=nums[i]+nums[j];
+            
+            if(s==target){
+                let indice=[i,j];
+                return indice;
+            }
+        }
+    }
+
+    
+};
+var num=[2,5,5,11];
+console.log(twoSum(num,10));
+    </script>
+</body>
+</html>
