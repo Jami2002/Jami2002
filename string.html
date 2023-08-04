@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>longestsubtring</title>
+    <script type="text/javascript">
+        
+     var lengthOfLongestSubstring = function(s) {
+             console.log("myString: "+s);
+         var vide="";
+         var keep="";
+        
+         for(var i=0;i<s.length;i++){
+            // si la chaine vide
+            if  (vide.length==0){
+              console.log(vide+=s.charAt(i));
+            }
+            else {
+               
+               if(vide.indexOf(s.charAt(i))==-1) {
+                 console.log(vide+=s.charAt(i),i);
+                console.log(s,7)
+               }
+              
+               else{ 
+                  vide=s.substring(0,i);
+                 if(vide.length>keep.length){
+                  // lancienne souschaine est abandonnée
+                    keep=vide;
+                    vide="";
+                  }
+                  else{
+                  keep=keep;
+                  vide="";
+                  }
+               
+                s=s.substring(s.indexOf(s.charAt(i))+1);
+                console.log(keep,i);
+                console.log(vide,i); 
+                console.log(s,71)
+                
+               i=-1;
+               
+               }
+             }
+          }
+          console.log(vide,keep);
+          if(vide.length<keep.length || vide.length==keep.length){
+            return keep.length;
+          }
+         
+          else{
+         return vide.length;} 
+        
+        };
+    var myString="abcabcbb";
+    console.log(lengthOfLongestSubstring (myString));
+    
+    
+    
+       </script> 
+</head>
+<body>
+  
+   <h1>bonjour</h1>
+</body>
+</html>
